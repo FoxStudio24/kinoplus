@@ -3592,15 +3592,17 @@ body.card--no-cover .full-start__background {
     font-size: 5em;
     font-weight: 800; /* Установка начертания ExtraBold */
     margin: 0 auto 1em; /* Центрирование блока по горизонтали */
-    overflow: hidden; /* Скрытие переполненного текста (опционально) */
-    text-overflow: ellipsis; /* Отображение многоточия при переполнении (опционально) */
-    display: block; /* Преобразование блока в блочный элемент для нормального поведения текста */
-    white-space: normal; /* Разрешение переноса текста на несколько строк */
+    overflow: hidden;
+    -o-text-overflow: ".";
+    text-overflow: ".";
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    line-clamp: 1;
+    -webkit-box-orient: vertical;
     text-align: center; /* Центрирование текста внутри блока */
-    line-height: 1.1; /* Увеличение межстрочного интервала для лучшей читаемости */
+    line-height: 1;
     max-width: 100%; /* Обеспечивает, что элемент не выходит за пределы контейнера */
     box-sizing: border-box; /* Учитывает отступы и границы в ширину блока */
-    word-break: break-word; /* Перенос длинных слов на новую строку */
 }
 
 @media screen and (max-width: 580px) {
@@ -3726,18 +3728,24 @@ body.card--no-cover .full-start__background {
     height: 5em;
 }
 
-.full-start-new__buttons {
-    position: relative; /* Необходимо для псевдоэлемента */
-    display: flex;
-    align-items: center;
-    justify-content: center; /* Центрирование по горизонтали */
-    overflow: hidden; /* Чтобы размытие не выходило за границы */
+.full-start-new__buttons::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Полупрозрачный черный фон для размытия */
+    filter: blur(8px); /* Степень размытия */
+    z-index: -1; /* Помещаем под содержимое */
 }
 
-/*@media screen and (max-width: 580px) {.full-start-new__buttons {
-    overflow: auto;
+@media screen and (max-width: 580px) {
+    .full-start-new__buttons {
+        overflow: auto;
+    }
 }
-}*/
+
 .full-start-new__buttons .full-start__button:not(.focus) span {
     display: none;
 }
