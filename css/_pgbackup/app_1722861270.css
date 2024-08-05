@@ -1740,7 +1740,8 @@ body.light--version .menu__item {
 .settings__content {
     position: fixed;
     top: 70px; /* Позиционирование сверху */
-    right: ; /* Позиционирование справа */
+    right: 0; /* Позиционирование справа */
+    bottom: 70px; /* Отступ снизу от нижнего края экрана */
     transition: transform 0.2s;
     background: rgba(0, 0, 0, 0.58); /* Полупрозрачный фон */
     width: 35%;
@@ -1760,13 +1761,13 @@ backdrop-filter: blur(25px); /* Размытие фона */
 */
 @media screen and (max-width: 767px) {
     .settings__content {
-        width: 100%domain;
+        width: 50%;
     }
 }
 
 @media screen and (max-width: 580px) {
     .settings__content {
-        width: 100%;
+        width: 70%;
     }
 }
 
@@ -1796,25 +1797,31 @@ backdrop-filter: blur(25px); /* Размытие фона */
 }
 
 .settings__title {
-    font-family: 'Unbounded', sans-serif; /* Применение шрифта Unbounded Light */
-    font-size: 2.5em; /* Размер шрифта */
-    font-weight: 300; /* Вес шрифта Light */
-    text-align: center; /* Центрирование текста */
+    font-size: 2.5em;
+    font-weight: 300;
 }
 
 .settings-folder {
     padding: 1.5em 2em; /* Внутренние отступы внутри элемента */
     margin: 20px; /* Внешние отступы вокруг элемента */
     display: flex; /* Современный синтаксис для flexbox */
-    flex-direction: column; /* Вертикальное расположение дочерних элементов */
-    justify-content: center; /* Вертикальное центрирование содержимого */
-    align-items: center; /* Горизонтальное центрирование содержимого */
-    text-align: center; /* Центрирование текста внутри элемента */
     will-change: transform; /* Оптимизация для изменения трансформации */
     border-radius: 15px; /* Закругление углов элемента */
     background: rgba(0, 0, 0, 0.1); /* Опционально: фон для видимости закруглений */
-    font-family: 'Unbounded', sans-serif; /* Применение шрифта Unbounded Light */
-    font-size: 1em; /* Уменьшенный размер шрифта, измените по необходимости */
+}
+
+.settings-folder__icon {
+    -webkit-flex-shrink: 0;
+    -ms-flex-negative: 0;
+    flex-shrink: 0;
+    margin-right: 1.5em;
+    width: 2em;
+    height: 2em;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
 }
 
 .settings-folder__icon > * {
@@ -1828,7 +1835,7 @@ backdrop-filter: blur(25px); /* Размытие фона */
 }
 
 .settings-folder.focus {
-    background-color: #6000ff;
+    background-color: #353535;
 }
 
 .settings-param {
@@ -3291,36 +3298,54 @@ body.settings--open .settings__content {
 }
 
 .full-start__rate {
-    background: rgba(0, 0, 0, 0.15); /* Полупрозрачный фон */
-    backdrop-filter: blur(10px); /* Размытие фона */
-    border-radius: 0.3em; /* Закругление углов */
-    display: flex; /* Современный синтаксис для flexbox */
-    align-items: center; /* Центрирование элементов по вертикали */
-    font-size: 1.45em; /* Размер шрифта */
-    margin-right: 1em; /* Отступ справа */
-    font-family: 'Unbounded', sans-serif; /* Применение шрифта Unbounded Black */
-    font-weight: 900; /* Вес шрифта Black 900 */
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(10px);
+    -webkit-border-radius: 0.3em;
+    -moz-border-radius: 0.3em;
+    border-radius: 0.3em;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -moz-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    font-size: 1.45em;
+    margin-right: 1em;
 }
 
 .full-start__rate > div:first-child {
-    width: 5em; /* Ширина элемента */
-    height: 1.5em; /* Высота элемента */
-    flex-shrink: 0; /* Отключение сжатия элемента */
-    border-radius: 0.3em; /* Закругление углов */
-    display: flex; /* Современный синтаксис для flexbox */
-    align-items: center; /* Центрирование элементов по вертикали */
-    justify-content: center; /* Центрирование элементов по горизонтали */
-    background: linear-gradient(135deg, #005BEA, #00FBC5); /* Градиентный фон */
-    color: #fff; /* Цвет текста (можно изменить, если нужно) */
+    width: 1.8em;
+    height: 1.5em;
+    -webkit-flex-shrink: 0;
+    -ms-flex-negative: 0;
+    flex-shrink: 0;
+    -webkit-border-radius: 0.3em;
+    -moz-border-radius: 0.3em;
+    border-radius: 0.3em;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -moz-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -moz-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
 }
 
 .full-start__rate > div:last-child {
-    font-size: 1em; /* Размер шрифта */
-    padding: 0 0.5em; /* Отступы по горизонтали */
-    background: linear-gradient(135deg, #005BEA, #00FBC5); /* Градиентный фон */
-    -webkit-background-clip: text; /* Применение фона к тексту */
-    background-clip: text; /* Применение фона к тексту */
-    color: transparent; /* Прозрачный цвет текста для отображения градиента */
+    font-size: 1em;
+    padding: 0 0.5em;
 }
 
 .full-start__icons {
@@ -3557,9 +3582,9 @@ body.card--no-cover .full-start__background {
 }
 
 .full-start-new__title {
-    font-family: 'Unbounded', sans-serif; /* Применение шрифта Unbounded Black */
-    font-size: 5em; /* Размер шрифта */
-    font-weight: 900; /* Вес шрифта Black 900 */
+    font-family: 'Martian Mono', monospace; /* Применение шрифта */
+    font-size: 5em;
+    font-weight: 800; /* Установка начертания ExtraBold */
     margin: 0 auto 1em; /* Центрирование блока по горизонтали */
     overflow: hidden; /* Скрытие переполненного текста (опционально) */
     text-overflow: ellipsis; /* Отображение многоточия при переполнении (опционально) */
@@ -3587,13 +3612,12 @@ body.card--no-cover .full-start__background {
 }
 
 .full-start-new__tagline {
-    font-family: 'Martian Mono', monospace; /* Применение шрифта Martian Mono */
-    font-size: 1em; /* Уменьшенный размер шрифта */
-    font-weight: 300; /* Вес шрифта Light */
-    line-height: 1; /* Межстрочный интервал */
-    margin-bottom: 1em; /* Отступ снизу */
-    margin-top: 0.9em; /* Отступ сверху */
-    text-align: center; /* Центрирование текста */
+    font-size: 1em;
+    line-height: 1.2;
+    margin-bottom: 1em;
+    margin-top: -0.3em;
+    text-align: center;
+    font-family: 'Rubik Mono One', sans-serif;
 }
 
 @media screen and (max-width: 580px) {
@@ -3603,19 +3627,16 @@ body.card--no-cover .full-start__background {
 }
 
 .full-start-new__details {
-    color: #fff; /* Цвет текста */
-    margin: -0.45em; /* Отступы */
-    margin-bottom: 1em; /* Отступ снизу */
-    display: flex; /* Использование flexbox для размещения элементов */
-    align-items: center; /* Центрирование элементов по вертикали */
-    justify-content: center; /* Центрирование элементов по горизонтали */
-    flex-wrap: wrap; /* Перенос элементов на новую строку */
-    min-height: 1.9em; /* Минимальная высота элемента */
-    font-size: 1.1em; /* Размер шрифта */
-    font-family: 'Unbounded', sans-serif; /* Применение шрифта Unbounded Black */
-    font-weight: 900; /* Вес шрифта Black 900 */
-    text-align: center; /* Центрирование текста внутри элемента */
-    white-space: normal; /* Разрешение переноса текста на несколько строк */
+    color: #fff;
+    margin: -0.45em;
+    margin-bottom: 1em;
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Центрирование по горизонтали */
+    flex-wrap: wrap;
+    min-height: 1.9em;
+    font-size: 1.1em;
+    font-family: 'Martian Mono', monospace; /* Применение шрифта Martian Mono */
 }
 
 .full-start-new__details > * {
