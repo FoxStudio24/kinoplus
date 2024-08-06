@@ -3224,7 +3224,7 @@ body.settings--open .settings__content {
 }
 
 .full-start__button {
-    margin-right: 0.2em;
+    margin-right: 0.1em;
     background-color: rgba(0, 0, 0, 0.3);
     backdrop-filter: blur(5px);
     padding: 0.3em 1em;
@@ -3257,7 +3257,7 @@ body.settings--open .settings__content {
 }
 
 .full-start__button > svg + span {
-    margin-left: 0.1em;
+    margin-left: 0.5em;
     margin-top: -0.2em;
 }
 
