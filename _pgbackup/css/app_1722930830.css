@@ -3224,8 +3224,9 @@ body.settings--open .settings__content {
 }
 
 .full-start__button {
-    margin-right: 0.2em;
-    background-color: rgba(0, 0, 0, 0.3);
+    margin-right: 0.75em;
+    background-color: rgba(0, 0, 0, 0.23);
+    backdrop-filter: blur(10px);
     backdrop-filter: blur(5px);
     padding: 0.3em 1em;
     display: -webkit-box;
@@ -3235,17 +3236,16 @@ body.settings--open .settings__content {
     display: flex;
     -webkit-border-radius: 1em;
     -moz-border-radius: 1em;
-    border-radius: 5em;
+    border-radius: 1em;
     -webkit-box-align: center;
     -webkit-align-items: center;
     -moz-box-align: center;
     -ms-flex-align: center;
     align-items: center;
-    height: 2.7em;
+    height: 2.8em;
     -webkit-flex-shrink: 0;
     -ms-flex-negative: 0;
     flex-shrink: 0;
-    font-family: 'Unbounded', sans-serif;
 }
 
 .full-start__button > svg {
@@ -3257,8 +3257,9 @@ body.settings--open .settings__content {
 }
 
 .full-start__button > svg + span {
-    margin-left: 0.1em;
-    margin-top: -0.2em;
+    margin-left: 0.5em;
+    margin-top: em;
+    display: none;
 }
 
 .full-start__button.focus {
