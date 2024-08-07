@@ -1894,7 +1894,7 @@ backdrop-filter: blur(25px); /* Размытие фона */
 }
 
 .settings-param.focus {
-    background: linear-gradient(45deg, #ff4b1f, #ff9068);
+    background: #353535;
 }
 
 .settings-param--button .settings-param__name {
@@ -8504,7 +8504,6 @@ body.true--mobile .notice {
     display: -ms-flexbox;
     display: flex;
     margin-bottom: 2em;
-    font-family: 'Unbounded', sans-serif; /* добавил шрифт Unbounded */
 }
 
 @media screen and (min-width: 767px) {
@@ -9592,7 +9591,6 @@ body.platform--netcast .torrent-item__ffprobe > div::before {
     -ms-flex-align: start;
     align-items: flex-start;
     margin-bottom: 3.3em;
-    font-family: 'Unbounded', sans-serif; /* добавил шрифт Unbounded */
 }
 
 .explorer-card__head-left {

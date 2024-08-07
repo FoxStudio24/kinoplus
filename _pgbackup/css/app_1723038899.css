@@ -1841,9 +1841,6 @@ backdrop-filter: blur(25px); /* Размытие фона */
     padding: 1.5em 2em;
     position: relative;
     will-change: transform;
-    margin-left: 20px; /* добавил отступ слева */
-    margin-right: 20px; /* добавил отступ справа */
-    border-radius: 1em; /* добавил закругление */
 }
 
 .settings-param__name {
@@ -1894,7 +1891,7 @@ backdrop-filter: blur(25px); /* Размытие фона */
 }
 
 .settings-param.focus {
-    background: linear-gradient(45deg, #ff4b1f, #ff9068);
+    background-color: #353535;
 }
 
 .settings-param--button .settings-param__name {
@@ -2391,7 +2388,7 @@ body.settings--open .settings__content {
 }
 
 .card__marker--viewed::before {
-    background-color: #d8c39a;
+    background-color: #FFD028;
 }
 
 .card__marker--scheduled::before {
@@ -2571,15 +2568,15 @@ body.settings--open .settings__content {
 .card.hover .card__view::after {
     content: "";
     position: absolute;
-    top: -0.50em; /* уменьшил значение */
-    left: -0.50em; /* уменьшил значение */
-    right: -0.50em; /* уменьшил значение */
-    bottom: -0.50em; /* уменьшил значение */
+    top: -0.5em;
+    left: -0.5em;
+    right: -0.5em;
+    bottom: -0.5em;
     border: 0.30em solid #d8c39a;
-    -webkit-border-radius: 2em; /* увеличил значение */
-    -moz-border-radius: 2em; /* увеличил значение */
-    border-radius: 2em; /* увеличил значение */
-    z-index: -1; /* исправил значение z-index */
+    -webkit-border-radius: 1.5em;
+    -moz-border-radius: 1.5em;
+    border-radius: 1.5em;
+    z-index: -;
     pointer-events: none;
 }
 
@@ -8504,7 +8501,6 @@ body.true--mobile .notice {
     display: -ms-flexbox;
     display: flex;
     margin-bottom: 2em;
-    font-family: 'Unbounded', sans-serif; /* добавил шрифт Unbounded */
 }
 
 @media screen and (min-width: 767px) {
@@ -9592,7 +9588,6 @@ body.platform--netcast .torrent-item__ffprobe > div::before {
     -ms-flex-align: start;
     align-items: flex-start;
     margin-bottom: 3.3em;
-    font-family: 'Unbounded', sans-serif; /* добавил шрифт Unbounded */
 }
 
 .explorer-card__head-left {

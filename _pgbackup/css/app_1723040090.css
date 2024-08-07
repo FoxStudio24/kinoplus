@@ -9592,7 +9592,6 @@ body.platform--netcast .torrent-item__ffprobe > div::before {
     -ms-flex-align: start;
     align-items: flex-start;
     margin-bottom: 3.3em;
-    font-family: 'Unbounded', sans-serif; /* добавил шрифт Unbounded */
 }
 
 .explorer-card__head-left {
