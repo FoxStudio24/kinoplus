@@ -4329,7 +4329,7 @@ video::-webkit-media-controls-panel-container {
     -moz-border-radius: 100%;
     border-radius: 100%;
     padding: 2em;
-    background-color: rgba(216, 195, 154, 0.36);
+    background-color: rgba(0, 0, 0, 0.5);
     margin-left: -4em;
     margin-top: -4em;
 }
@@ -4547,7 +4547,7 @@ video::-webkit-media-controls-panel-container {
 }
 
 .player-video__paused {
-    background-color: rgba(189, 171, 135, 0.33);
+    background-color: rgba(0, 0, 0, 0.6);
 }
 
 .player.player--panel-visible .player-video__subtitles {

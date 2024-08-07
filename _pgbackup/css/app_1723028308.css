@@ -4329,7 +4329,7 @@ video::-webkit-media-controls-panel-container {
     -moz-border-radius: 100%;
     border-radius: 100%;
     padding: 2em;
-    background-color: rgba(216, 195, 154, 0.36);
+    background-color: rgba(0, 0, 0, 0.5);
     margin-left: -4em;
     margin-top: -4em;
 }
@@ -4547,7 +4547,7 @@ video::-webkit-media-controls-panel-container {
 }
 
 .player-video__paused {
-    background-color: rgba(189, 171, 135, 0.33);
+    background-color: rgba(0, 0, 0, 0.6);
 }
 
 .player.player--panel-visible .player-video__subtitles {
@@ -4737,7 +4737,7 @@ body.true--mobile.orientation--portrait .player-video__paused {
 .player-panel__timeline {
     position: relative;
     height: 0.4em;
-    background-color: rgba(216, 195, 154, 0.2);
+    background-color: rgba(255, 255, 255, 0.1);
     -webkit-border-radius: 2em;
     -moz-border-radius: 2em;
     border-radius: 2em;
@@ -4745,9 +4745,9 @@ body.true--mobile.orientation--portrait .player-video__paused {
 }
 
 .player-panel__timeline.focus {
-    -webkit-box-shadow: 0 0 0 0.1em #d8c39a;
-    -moz-box-shadow: 0 0 0 0.1em #d8c39a;
-    box-shadow: 0 0 0 0.1em #d8c39a;
+    -webkit-box-shadow: 0 0 0 0.1em #fff;
+    -moz-box-shadow: 0 0 0 0.1em #fff;
+    box-shadow: 0 0 0 0.1em #fff;
 }
 
 .player-panel__timeline.focus .player-panel__position > div:after {
@@ -4803,7 +4803,7 @@ body.true--mobile.orientation--portrait .player-video__paused {
     -webkit-flex-shrink: 0;
     -ms-flex-negative: 0;
     flex-shrink: 0;
-    background-color: #d8c39a;
+    background-color: #ffa900;
     top: 50%;
     right: 0;
     -webkit-transform: translateY(-50%) translateX(50%);
@@ -4817,7 +4817,7 @@ body.true--mobile.orientation--portrait .player-video__paused {
 .player-panel__time {
     position: absolute;
     bottom: 100%;
-    background: rgba(0, 0, 0, 0);
+    background: rgba(0, 0, 0, 0.3);
     -webkit-border-radius: 0.3em;
     -moz-border-radius: 0.3em;
     border-radius: 0.3em;
@@ -4958,7 +4958,7 @@ body.true--mobile.orientation--portrait .player-video__paused {
 }
 
 .player-panel__playpause {
-    font-size: 2em;
+    font-size: 1.4em;
     margin: 0 1em;
 }
 
@@ -5356,14 +5356,14 @@ body.true--mobile.orientation--portrait .player-video__paused {
 }
 
 .player-panel {
-    background-color: rgba(0, 0, 0, 0.2);
+    background-color: rgba(0, 0, 0, 0.6);
 }
 
 body.platform--browser .player-panel,
 body.platform--nw .player-panel {
-    background-color: rgba(216, 195, 154, 0.31);
+    background-color: rgba(0, 0, 0, 0.3);
     -webkit-backdrop-filter: blur(1em);
-    backdrop-filter: blur(20px);
+    backdrop-filter: blur(1em);
 }
 
 body.true--mobile.orientation--portrait .player-panel__line:first-child {
