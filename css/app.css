@@ -1138,6 +1138,7 @@ body.light--version .wrap__left {
 }
 
 .head__body {
+    font-family: 'Unbounded', sans-serif;
     padding: 0.5em 1.5em;
     display: -webkit-box;
     display: -webkit-flex;
@@ -1661,8 +1662,9 @@ body.true--mobile.orientation--landscape .head .head__body {
 }
 
 .menu__text {
-    font-size: 1.4em;
+    font-family: 'Montserrat', sans-serif;
     font-weight: 600;
+    font-size: 1.4em;
     line-height: 0.8;
     margin-top: -0.1em;
 }
@@ -1743,7 +1745,7 @@ body.light--version .menu__item {
 
 .settings__content {
     position: fixed;
-    top: 70px; /* Позиционирование сверху */
+    top: 0px; /* Позиционирование сверху */
     right: ; /* Позиционирование справа */
     transition: transform 0.2s;
     background: rgba(0, 0, 0, 0.58); /* Полупрозрачный фон */
@@ -1816,7 +1818,7 @@ backdrop-filter: blur(25px); /* Размытие фона */
     text-align: center; /* Центрирование текста внутри элемента */
     will-change: transform; /* Оптимизация для изменения трансформации */
     border-radius: 15px; /* Закругление углов элемента */
-    background: rgba(0, 0, 0, 0.1); /* Опционально: фон для видимости закруглений */
+    background: rgba(0, 0, 0, 0.35); /* Опционально: фон для видимости закруглений */
     font-family: 'Unbounded', sans-serif; /* Применение шрифта Unbounded Light */
     font-size: 1em; /* Уменьшенный размер шрифта, измените по необходимости */
 }
@@ -1832,7 +1834,7 @@ backdrop-filter: blur(25px); /* Размытие фона */
 }
 
 .settings-folder.focus {
-    background-color: #6000ff;
+    background: linear-gradient(135deg, #ff4b1f, #ff9068); /* Градиент */
 }
 
 .settings-param {
@@ -2112,6 +2114,7 @@ body.settings--open .settings__content {
 }
 
 .items-line__title {
+    font-family: 'Unbounded', sans-serif;
     font-size: 1.6em;
     font-weight: 400;
 }
@@ -2128,10 +2131,11 @@ body.settings--open .settings__content {
 .items-line__more {
     margin-left: 2em;
     padding: 0.4em 1em;
-    background: rgba(0, 0, 0, 0.33);
+    background: rgba(216, 195, 154, 0.22);
     -webkit-border-radius: 0.3em;
     -moz-border-radius: 0.3em;
     border-radius: 0.3em;
+    font-family: 'Unbounded', sans-serif; /* Или друг шрифт, който сте задали */
 }
 
 .items-line__more.focus {
@@ -2276,6 +2280,8 @@ body.settings--open .settings__content {
 }
 
 .card__title {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
     font-size: 1.3em;
     max-height: 3.6em;
     overflow: hidden;
@@ -2289,6 +2295,8 @@ body.settings--open .settings__content {
 }
 
 .card__age {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
     font-size: 0.9em;
     margin-top: 0.6em;
 }
@@ -2509,6 +2517,7 @@ body.settings--open .settings__content {
 }
 
 .card__vote {
+    font-family: 'Unbounded', sans-serif;
     position: absolute;
     right: 0;
     bottom: 0;
@@ -3707,7 +3716,7 @@ body.card--no-cover .full-start__background {
     display: flex;
     align-items: center;
     justify-content: center; /* Центрирование по горизонтали */
-    gap: 1em; /* Промежуток между кнопками */
+    gap: 0.1em; /* Промежуток между кнопками */
     overflow: hidden; /* Чтобы размытие не выходило за границы */
 }
 
@@ -3740,15 +3749,13 @@ body.card--no-cover .full-start__background {
 }
 
 .full-descr__text {
+    font-family: 'Montserrat', sans-serif; /* Применение шрифта Montserrat */
     font-size: 1.3em;
     line-height: 1.4;
-    font-weight: 300;
+    font-weight: 600; /* Полужирное начертание Montserrat SemiBold */
     max-height: 70vh;
     overflow: hidden;
-    max-height: 41vh;
-    -webkit-mask-image: -webkit-gradient(linear, left top, left bottom, from(white), color-stop(80%, white), to(rgba(255, 255, 255, 0)));
     -webkit-mask-image: -webkit-linear-gradient(top, white 0%, white 80%, rgba(255, 255, 255, 0) 100%);
-    mask-image: -webkit-gradient(linear, left top, left bottom, from(white), color-stop(80%, white), to(rgba(255, 255, 255, 0)));
     mask-image: linear-gradient(to bottom, white 0%, white 80%, rgba(255, 255, 255, 0) 100%);
 }
 
@@ -3761,6 +3768,7 @@ body.card--no-cover .full-start__background {
 }
 
 .full-descr__right {
+    font-family: 'Unbounded', sans-serif; /* Применение шрифта Unbounded */
     -webkit-flex-shrink: 0;
     -ms-flex-negative: 0;
     flex-shrink: 0;
@@ -3781,11 +3789,13 @@ body.card--no-cover .full-start__background {
 }
 
 .full-descr__line-name {
+    font-family: 'Unbounded', sans-serif; /* Применение шрифта Unbounded */
     font-size: 1.2em;
     margin-bottom: 1em;
 }
 
 .full-descr__line-body {
+    font-family: 'Montserrat', sans-serif; /* Применение шрифта Montserrat */
     display: -webkit-box;
     display: -webkit-flex;
     display: -moz-box;
@@ -3815,14 +3825,14 @@ body.card--no-cover .full-start__background {
     -webkit-border-radius: 0.6em;
     -moz-border-radius: 0.6em;
     border-radius: 0.6em;
-    background-color: rgba(0, 0, 0, 0.3);
+    background-color: rgba(216, 195, 154, 0.3);
     padding: 0.4em 0.8em 0.5em 0.8em;
     font-size: 1.2em;
     margin: 0.2em;
 }
 
 .full-descr__tag.focus {
-    background-color: #fff;
+    background-color: #d8c39a;
     color: #000;
 }
 
@@ -3862,7 +3872,7 @@ body.card--no-cover .full-start__background {
     -webkit-border-radius: 1em;
     -moz-border-radius: 1em;
     border-radius: 1em;
-    background-color: #fff;
+    background-color: #d8c39a;
     margin-right: 1em;
     -webkit-flex-shrink: 0;
     -ms-flex-negative: 0;
@@ -3892,11 +3902,13 @@ body.card--no-cover .full-start__background {
 
 .full-person__name {
     font-size: 1.5em;
+    font-family: 'Unbounded', sans-serif;
 }
 
 .full-person__role {
     font-size: 1.1em;
     margin-top: 0.7em;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .full-person.hover {
@@ -3904,7 +3916,7 @@ body.card--no-cover .full-start__background {
 }
 
 .full-person.focus {
-    background-color: #fff;
+    background-color: #d4c097;
     color: #000;
 }
 
@@ -5674,7 +5686,7 @@ body.true--mobile .player-info .head-backward__button {
 
 .selectbox__content {
     position: fixed;
-    top: 70px; /* Отступ сверху 70 пикселей */
+    top: 0px; /* Отступ сверху 70 пикселей */
     left: 100%;
     -webkit-transition: -webkit-transform 0.2s;
     transition: -webkit-transform 0.2s;
@@ -5682,7 +5694,7 @@ body.true--mobile .player-info .head-backward__button {
     -moz-transition: transform 0.2s, -moz-transform 0.2s;
     transition: transform 0.2s;
     transition: transform 0.2s, -webkit-transform 0.2s, -moz-transform 0.2s, -o-transform 0.2s;
-    background: rgba(0, 0, 0, 0.47);
+    background: rgba(0, 0, 0, 0.33);
     width: 35%;
     display: -webkit-box;
     display: -webkit-flex;
@@ -5697,19 +5709,19 @@ body.true--mobile .player-info .head-backward__button {
     -ms-flex-direction: column;
     flex-direction: column;
     will-change: transform;
-    border-radius: 10px; /* Закругление углов */
-    backdrop-filter: blur(10px); /* Размытие фона */
+    border-radius: 25px; /* Закругление углов */
+    backdrop-filter: blur(25px); /* Размытие фона */
 }
 
 @media screen and (max-width: 767px) {
     .selectbox__content {
-        width: 100%;
+        width: 70%;
     }
 }
 
 @media screen and (max-width: 580px) {
     .selectbox__content {
-        width: 100%;
+        width: 70%;
     }
 }
 
@@ -5719,6 +5731,8 @@ body.true--mobile .player-info .head-backward__button {
     flex-shrink: 0;
     padding: 2em;
     padding-bottom: 0;
+    font-family: 'Unbounded', sans-serif;
+    text-align: center; /* Выравнивание текста по центру */
 }
 
 .selectbox__body {
@@ -5739,7 +5753,7 @@ body.true--mobile .player-info .head-backward__button {
 }
 
 .selectbox__title {
-    font-size: 2.5em;
+    font-size: 2em;
     font-weight: 300;
 }
 
@@ -5863,7 +5877,7 @@ body.selectbox--open .selectbox__content {
 }
 
 .selectbox-item.focus {
-    background: linear-gradient(135deg, #2CD8D5, #6B8DD6, #8E37D7);
+    background: linear-gradient(135deg, #ff4b1f, #ff9068);
 }
 
 .youtube-player {
@@ -6138,7 +6152,7 @@ body.selectbox--open .selectbox__content {
     -moz-transition: transform 0.3s, border-color 0.2s, -moz-transform 0.3s;
     transition: transform 0.3s, border-color 0.2s;
     transition: transform 0.3s, border-color 0.2s, -webkit-transform 0.3s, -moz-transform 0.3s, -o-transform 0.3s;
-    background-color: #3E3E3E;
+    background-color: rgba(216, 195, 154, 0.42);
     -webkit-border-radius: 1em;
     -moz-border-radius: 1em;
     border-radius: 1em;
@@ -6147,6 +6161,7 @@ body.selectbox--open .selectbox__content {
 }
 
 .card-more__title {
+    font-family: 'Unbounded', sans-serif;
     position: absolute;
     top: 50%;
     left: 0;
@@ -6344,14 +6359,16 @@ body.platform--netcast .category-full:after {
     font-size: 2em;
     margin-bottom: 0.7em;
     padding-left: 0.7em;
+    font-family: 'Unbounded', sans-serif; /* Применение шрифта Unbounded */
 }
 
 .search__keypad {
     padding: 0 1.5em;
 }
 
-.search__keypad .simple-keyboard {
-    margin-bottom: 5px;
+.search__keypad {
+    padding: 0 1.5em;
+    font-family: 'Unbounded', sans-serif; /* Применение шрифта Unbounded */
 }
 
 @media screen and (min-width: 991px) {
@@ -6380,6 +6397,7 @@ body.platform--netcast .category-full:after {
 .search__history,
 .search__sources {
     margin-bottom: 0.6em;
+    font-family: 'Unbounded', sans-serif; /* Применение шрифта Unbounded */
 }
 
 .search__history .scroll__body,
@@ -12606,8 +12624,8 @@ body.glass--style .navigation-bar__body {
 body.glass--style .selectbox-item.focus,
 body.glass--style .settings-folder.focus,
 body.glass--style .settings-param.focus {
-    background-color: #fff;
-    color: #000;
+    background: linear-gradient(135deg, #ff4b1f, #ff9068); /* Градиент */
+    color: #000; /* Цвет текста */
 }
 
 body.glass--style .selectbox-item.focus .settings-folder__icon,
