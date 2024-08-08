@@ -4323,7 +4323,7 @@ video::-webkit-media-controls-panel-container {
     -moz-border-radius: 100%;
     border-radius: 100%;
     padding: 2em;
-    background-color: rgba(216, 195, 154, 0);
+    background-color: rgba(216, 195, 154, 0.36);
     margin-left: -4em;
     margin-top: -4em;
 }
@@ -5494,9 +5494,7 @@ body.true--mobile.orientation--portrait .player-panel__quality {
 }
 
 .player-info__body {
-    position: relative; /* Required for the pseudo-element positioning */
     padding: 1.5em;
-    overflow: hidden; /* Contain the pseudo-element within the element */
 }
 
 .player-info.info--visible {
@@ -5559,7 +5557,7 @@ body.true--mobile.orientation--portrait .player-panel__quality {
 }
 
 .player-info__values .value--size span {
-    background: rgba(216, 195, 154, 0.3);
+    background: rgba(225, 255, 255, 0.18);
     padding: 0.1em 0.5em;
     -webkit-border-radius: 0.3em;
     -moz-border-radius: 0.3em;
@@ -12686,7 +12684,7 @@ body.glass--style-opacity--medium .player-info,
 body.glass--style-opacity--medium .player-video__paused,
 body.glass--style-opacity--medium .player-video__loader,
 body.glass--style-opacity--medium .normalization {
-    background-color: rgba(0, 0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.6);
 }
 
 body.glass--style-opacity--blacked .selectbox__content,
@@ -12705,6 +12703,6 @@ body.glass--style-opacity--blacked .player-info,
 body.glass--style-opacity--blacked .player-video__paused,
 body.glass--style-opacity--blacked .player-video__loader,
 body.glass--style-opacity--blacked .normalization {
-    background-color: rgba(0, 0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.85);
 }
 }
