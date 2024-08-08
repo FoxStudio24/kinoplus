@@ -2110,9 +2110,6 @@ body.settings--open .settings__content {
     font-family: 'Unbounded', sans-serif;
     font-size: 1.6em;
     font-weight: 400;
-    background: linear-gradient(to bottom right, #d4bf97, #a0c348); /* Градиентные цвета */
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
 }
 
 .items-line__title .full-person__photo {
@@ -2379,8 +2376,7 @@ body.settings--open .settings__content {
 }
 
 .card__marker--look::before {
-    background-color: rgba(255, 255, 255, 0.5); /* Прозрачный белый фон */
-    backdrop-filter: blur(10px); /* Эффект размытия */
+    background-color: #5DBFF5;
 }
 
 .card__marker--viewed::before {
@@ -2922,10 +2918,9 @@ body.settings--open .settings__content {
 .full-start__status {
     font-size: 1.2em;
     border: 1px solid #757575;
-    border-radius: 0.2em;
+    border-radius: 0.2em; /* Упрощенный синтаксис закругления углов */
     padding: 0.3em;
     background: rgba(0, 0, 0, 0.5); /* Черный прозрачный фон */
-    backdrop-filter: blur(25px); /* Добавляет размытие фона */
 }
 
 .full-start__body {

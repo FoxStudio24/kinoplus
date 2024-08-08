@@ -2110,9 +2110,6 @@ body.settings--open .settings__content {
     font-family: 'Unbounded', sans-serif;
     font-size: 1.6em;
     font-weight: 400;
-    background: linear-gradient(to bottom right, #d4bf97, #a0c348); /* Градиентные цвета */
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
 }
 
 .items-line__title .full-person__photo {
@@ -2379,8 +2376,7 @@ body.settings--open .settings__content {
 }
 
 .card__marker--look::before {
-    background-color: rgba(255, 255, 255, 0.5); /* Прозрачный белый фон */
-    backdrop-filter: blur(10px); /* Эффект размытия */
+    background-color: #5DBFF5;
 }
 
 .card__marker--viewed::before {
@@ -2922,10 +2918,9 @@ body.settings--open .settings__content {
 .full-start__status {
     font-size: 1.2em;
     border: 1px solid #757575;
-    border-radius: 0.2em;
+    border-radius: 0.2em; /* Упрощенный синтаксис закругления углов */
     padding: 0.3em;
     background: rgba(0, 0, 0, 0.5); /* Черный прозрачный фон */
-    backdrop-filter: blur(25px); /* Добавляет размытие фона */
 }
 
 .full-start__body {
@@ -4687,7 +4682,7 @@ body.true--mobile.orientation--portrait .player-video__paused {
     bottom: 1.5em;
     right: 1.5em;
     width: 100%;
-    background-color: rgba(216, 195, 154, 0.45);
+    background-color: rgba(0, 0, 0, 0.45);
     backdrop-filter: blur(10px);
     -webkit-transform: translateY(130%);
     -moz-transform: translateY(130%);
@@ -4731,7 +4726,7 @@ body.true--mobile.orientation--portrait .player-video__paused {
 .player-panel__timeline {
     position: relative;
     height: 0.4em;
-    background-color: rgba(216, 195, 154, 0.2);
+    background-color: rgba(216, 195, 154, 0.18);
     -webkit-border-radius: 2em;
     -moz-border-radius: 2em;
     border-radius: 2em;
@@ -4739,7 +4734,7 @@ body.true--mobile.orientation--portrait .player-video__paused {
 }
 
 .player-panel__timeline.focus {
-    -webkit-box-shadow: 0 0 0 0.1em #d8c39a;
+    -webkit-box-shadow: 0 0 0 0.1em #bcaa87;
     -moz-box-shadow: 0 0 0 0.1em #d8c39a;
     box-shadow: 0 0 0 0.1em #d8c39a;
 }
@@ -4768,7 +4763,7 @@ body.true--mobile.orientation--portrait .player-video__paused {
 }
 
 .player-panel__position {
-    background-color: #d8c39a;
+    background-color: #c3b08b;
     display: -webkit-box;
     display: -webkit-flex;
     display: -moz-box;
@@ -12616,8 +12611,8 @@ body.glass--style .modal__content,
 body.glass--style .settings-input--free,
 body.glass--style .navigation-bar__body {
     background-color: rgba(0, 0, 0, 0);
-    -webkit-backdrop-filter: blur(25px);
-    backdrop-filter: blur(25px);
+    -webkit-backdrop-filter: blur(0px);
+    backdrop-filter: blur(0px);
 }
 
 body.glass--style .selectbox-item.focus,
@@ -12678,8 +12673,8 @@ body.glass--style-opacity--medium .modal__content,
 body.glass--style-opacity--medium .settings-input--free,
 body.glass--style-opacity--medium .navigation-bar__body {
     background-color: rgba(0, 0, 0, 0);
-    -webkit-backdrop-filter: blur(25px);
-    backdrop-filter: blur(25px);
+    -webkit-backdrop-filter: blur(0px);
+    backdrop-filter: blur(0px);
 }
 
 body.glass--style-opacity--medium .player-panel,

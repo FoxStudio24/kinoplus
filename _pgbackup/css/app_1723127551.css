@@ -2110,7 +2110,7 @@ body.settings--open .settings__content {
     font-family: 'Unbounded', sans-serif;
     font-size: 1.6em;
     font-weight: 400;
-    background: linear-gradient(to bottom right, #d4bf97, #a0c348); /* Градиентные цвета */
+    background: linear-gradient(to bottom right, #0a6b66, #d8c39a); /* Градиентные цвета */
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
@@ -2379,8 +2379,7 @@ body.settings--open .settings__content {
 }
 
 .card__marker--look::before {
-    background-color: rgba(255, 255, 255, 0.5); /* Прозрачный белый фон */
-    backdrop-filter: blur(10px); /* Эффект размытия */
+    background-color: #5DBFF5;
 }
 
 .card__marker--viewed::before {
