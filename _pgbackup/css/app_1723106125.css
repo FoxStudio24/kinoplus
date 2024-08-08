@@ -932,12 +932,15 @@ body.ambience--enable .head {
     left: 0;
     bottom: 0;
     right: 0;
-    padding: 0 1.5em 2em 1.5em;
+    padding: 0 1.5em 2em 1.5em; /* Отступы остаются */
     z-index: 11;
-    display: none;
+    display: block;
+    background: transparent; /* Удаление фона */
 }
 
 .navigation-bar__body {
+    -webkit-border-radius: 1.4em;
+    -moz-border-radius: 1.4em;
     border-radius: 1.4em;
     background: transparent; /* Установлен полностью прозрачный фон */
     padding: 1.2em;
@@ -3705,7 +3708,7 @@ body.card--no-cover .full-start__background {
     flex-wrap: wrap; /* Разрешить перенос элементов на новую строку */
     align-items: center;
     justify-content: center; /* Центрирование по горизонтали */
-    gap: 0.15em; /* Промежуток между кнопками по горизонтали */
+    gap: 0.1em; /* Промежуток между кнопками по горизонтали */
     row-gap: 10px; /* Промежуток между строками */
     overflow: hidden; /* Чтобы размытие не выходило за границы */
 }
@@ -12610,9 +12613,9 @@ body.glass--style .settings-input__content,
 body.glass--style .modal__content,
 body.glass--style .settings-input--free,
 body.glass--style .navigation-bar__body {
-    background-color: rgba(0, 0, 0, 0);
-    -webkit-backdrop-filter: blur(0px);
-    backdrop-filter: blur(0px);
+    background-color: rgba(0, 0, 0, 0.29);
+    -webkit-backdrop-filter: blur(1.6em);
+    backdrop-filter: blur(1.6em);
 }
 
 body.glass--style .selectbox-item.focus,
@@ -12672,9 +12675,9 @@ body.glass--style-opacity--medium .settings-input__content,
 body.glass--style-opacity--medium .modal__content,
 body.glass--style-opacity--medium .settings-input--free,
 body.glass--style-opacity--medium .navigation-bar__body {
-    background-color: rgba(0, 0, 0, 0);
-    -webkit-backdrop-filter: blur(0px);
-    backdrop-filter: blur(0px);
+    background-color: rgba(0, 0, 0, 0.32);
+    -webkit-backdrop-filter: blur(1.1em);
+    backdrop-filter: blur(1.1em);
 }
 
 body.glass--style-opacity--medium .player-panel,
@@ -12691,9 +12694,9 @@ body.glass--style-opacity--blacked .settings-input__content,
 body.glass--style-opacity--blacked .modal__content,
 body.glass--style-opacity--blacked .settings-input--free,
 body.glass--style-opacity--blacked .navigation-bar__body {
-    background-color: rgba(0, 0, 0, 0);
-    -webkit-backdrop-filter: blur(0px);
-    backdrop-filter: blur(0px);
+    background-color: rgba(0, 0, 0, 0.28);
+    -webkit-backdrop-filter: blur(0.5em);
+    backdrop-filter: blur(0.5em);
 }
 
 body.glass--style-opacity--blacked .player-panel,

@@ -12611,8 +12611,8 @@ body.glass--style .modal__content,
 body.glass--style .settings-input--free,
 body.glass--style .navigation-bar__body {
     background-color: rgba(0, 0, 0, 0);
-    -webkit-backdrop-filter: blur(0px);
-    backdrop-filter: blur(0px);
+    -webkit-backdrop-filter: blur(25px);
+    backdrop-filter: blur(25px);
 }
 
 body.glass--style .selectbox-item.focus,
@@ -12673,8 +12673,8 @@ body.glass--style-opacity--medium .modal__content,
 body.glass--style-opacity--medium .settings-input--free,
 body.glass--style-opacity--medium .navigation-bar__body {
     background-color: rgba(0, 0, 0, 0);
-    -webkit-backdrop-filter: blur(0px);
-    backdrop-filter: blur(0px);
+    -webkit-backdrop-filter: blur(25px);
+    backdrop-filter: blur(25px);
 }
 
 body.glass--style-opacity--medium .player-panel,
@@ -12692,8 +12692,8 @@ body.glass--style-opacity--blacked .modal__content,
 body.glass--style-opacity--blacked .settings-input--free,
 body.glass--style-opacity--blacked .navigation-bar__body {
     background-color: rgba(0, 0, 0, 0);
-    -webkit-backdrop-filter: blur(0px);
-    backdrop-filter: blur(0px);
+    -webkit-backdrop-filter: blur(25px);
+    backdrop-filter: blur(25px);
 }
 
 body.glass--style-opacity--blacked .player-panel,
