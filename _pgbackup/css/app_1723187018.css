@@ -12627,7 +12627,7 @@ body.glass--style .navigation-bar__body {
 body.glass--style .selectbox-item.focus,
 body.glass--style .settings-folder.focus,
 body.glass--style .settings-param.focus {
-    background: linear-gradient(45deg, #ff4b1f, #ff9068);
+    background: linear-gradient(135deg, #ffffff, #ffffff); /* Градиент */
     color: #000000; /* Цвет текста */
 }
 
@@ -12646,7 +12646,7 @@ body.glass--style .selectbox-item.focus::after {
 }
 
 body.glass--style .settings-param-title > span {
-    color: #6f6f6f;
+    color: rgba(255, 255, 255, 0.22);
 }
 
 body.glass--style .settings-input__links {
