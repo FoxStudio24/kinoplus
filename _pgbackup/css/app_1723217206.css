@@ -2536,7 +2536,6 @@ body.settings--open .settings__content {
     -webkit-border-bottom-right-radius: 0.6em;
     -moz-border-radius-bottomright: 0.6em;
     border-bottom-right-radius: 1em;
-    border: 0.5px solid #9a8d73; /* Black border with width of 2px */
 }
 
 .card__textbox {

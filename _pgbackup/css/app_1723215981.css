@@ -1586,8 +1586,6 @@ body.true--mobile.orientation--landscape .head .head__body {
 .menu__item.hover {
     background-color: #d6bf99;
     color: #000;
-    border: 1px solid #222222; /* Black border with width of 2px */
-    border-radius: 2em; /* Optional: Adds rounded corners */
 }
 
 .menu__item.focus .menu__ico > img,
@@ -2137,10 +2135,8 @@ body.settings--open .settings__content {
 }
 
 .items-line__more.focus {
-    background-color: #b4a383;
+    background-color: #fff;
     color: #000;
-    border: 1px solid #000; /* Black border with width of 2px */
-    border-radius: 0.3em; /* Ensure this matches the border-radius of the element */
 }
 
 .items-line + .items-line {
@@ -2277,8 +2273,6 @@ body.settings--open .settings__content {
     margin-bottom: 0.5em;
     position: relative;
     padding-bottom: 150%;
-    border: 1px solid rgba(255, 255, 255, 0.28); /* White border with width of 2px */
-    border-radius: 1.5em; /* Rounded corners with a radius of 1.5em */
 }
 
 .card__title {
@@ -2536,7 +2530,6 @@ body.settings--open .settings__content {
     -webkit-border-bottom-right-radius: 0.6em;
     -moz-border-radius-bottomright: 0.6em;
     border-bottom-right-radius: 1em;
-    border: 0.5px solid #9a8d73; /* Black border with width of 2px */
 }
 
 .card__textbox {
@@ -3271,8 +3264,6 @@ body.settings--open .settings__content {
 .full-start__button.focus {
     background-color: #d8c39a;
     color: #000;
-    border: 1px solid #000; /* Black border with width of 2px */
-    border-radius: 2em; /* Ensure this matches the button's border radius */
 }
 
 .full-start__ratings {
@@ -3541,7 +3532,6 @@ body.card--no-cover .full-start__background {
     -moz-border-radius: 2em;
     border-radius: 2em;
     opacity: 0;
-    border: 1px solid rgba(255, 255, 255, 0.3); /* Border with color and width */
 }
 
 @media screen and (max-width: 400px) {
@@ -3716,14 +3706,12 @@ body.card--no-cover .full-start__background {
     height: 5em;
 }
 
-.full-start-new__buttons {
-    display: flex;
-    flex-wrap: wrap; /* Разрешить перенос элементов на новую строку */
-    align-items: center;
-    justify-content: center; /* Центрирование по горизонтали */
-    gap: 0.15em; /* Промежуток между кнопками по горизонтали */
-    row-gap: 10px; /* Промежуток между строками */
-    overflow: hidden; /* Чтобы размытие не выходило за границы */
+.full-start-new__buttons .button {
+    border-radius: 0.6em; /* Ensure this matches with your button's design */
+    padding: 0.4em 0.8em; /* Adjust padding as needed */
+    background-color: rgba(0, 0, 0, 0.3); /* Adjust the background color if needed */
+    box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.3); /* Adds a border-like shadow */
+    /* Other button styles go here */
 }
 
 /*@media screen and (max-width: 580px) {.full-start-new__buttons {

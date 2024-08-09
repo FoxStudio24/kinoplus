@@ -1586,8 +1586,6 @@ body.true--mobile.orientation--landscape .head .head__body {
 .menu__item.hover {
     background-color: #d6bf99;
     color: #000;
-    border: 1px solid #222222; /* Black border with width of 2px */
-    border-radius: 2em; /* Optional: Adds rounded corners */
 }
 
 .menu__item.focus .menu__ico > img,
@@ -2137,10 +2135,8 @@ body.settings--open .settings__content {
 }
 
 .items-line__more.focus {
-    background-color: #b4a383;
+    background-color: #fff;
     color: #000;
-    border: 1px solid #000; /* Black border with width of 2px */
-    border-radius: 0.3em; /* Ensure this matches the border-radius of the element */
 }
 
 .items-line + .items-line {
@@ -2536,7 +2532,6 @@ body.settings--open .settings__content {
     -webkit-border-bottom-right-radius: 0.6em;
     -moz-border-radius-bottomright: 0.6em;
     border-bottom-right-radius: 1em;
-    border: 0.5px solid #9a8d73; /* Black border with width of 2px */
 }
 
 .card__textbox {
