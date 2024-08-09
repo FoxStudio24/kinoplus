@@ -2920,7 +2920,6 @@ body.settings--open .settings__content {
 
 .full-start__pg,
 .full-start__status {
-    font-family: 'Unbounded', sans-serif; /* Добавлен шрифт Unbounded */
     font-size: 1.2em;
     border: 1px solid #757575;
     border-radius: 0.2em;
@@ -10156,7 +10155,7 @@ body.platform--netcast .torrent-item__ffprobe > div::before {
 .simple-button {
     margin-right: 1em;
     font-size: 1.3em;
-    background-color: rgba(0, 0, 0, 0.19);
+    background-color: rgba(0, 0, 0, 0.3);
     padding: 0.3em 1.2em;
     display: -webkit-box;
     display: -webkit-flex;
