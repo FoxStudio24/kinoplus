@@ -1905,7 +1905,7 @@ backdrop-filter: blur(25px); /* Размытие фона */
 .settings-param-title > span {
     font-size: 1.2em;
     font-weight: 600;
-    color: rgba(255, 255, 255, 0.89);
+    color: #6f6f6f;
 }
 
 .settings-param-text {
@@ -12684,7 +12684,7 @@ body.glass--style .selectbox-item.focus::after {
 }
 
 body.glass--style .settings-param-title > span {
-    color: rgba(255, 255, 255, 0.89);
+    color: #6f6f6f;
 }
 
 body.glass--style .settings-input__links {
