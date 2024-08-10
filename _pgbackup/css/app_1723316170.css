@@ -4977,9 +4977,8 @@ body.true--mobile.orientation--portrait .player-video__paused {
 }
 
 .player-panel .button.focus {
-    background: linear-gradient(to right, #ff4500, #ff6e00);
-    box-shadow: 0 3px 20px rgba(255, 75, 31, 0.75);
-    color: #ffffff;
+    background: linear-gradient(to right, #ff0000, #ff6e00);
+    color: #000;
 }
 
 .player-panel__right .button + .button,
@@ -5017,8 +5016,10 @@ body.true--mobile.orientation--portrait .player-video__paused {
 
 .player-panel__quality {
     width: auto !important;
-    padding: 3px 1em !important; /* Отступы по 2px сверху и снизу, по 0.1em по бокам */
-    border-radius: 1.5em !important; /* Увеличенный радиус скругления */
+    padding: 0.1em 0.5em !important;
+    -webkit-border-radius: 0.2em !important;
+    -moz-border-radius: 0.2em !important;
+    border-radius: 0.2em !important;
     text-transform: uppercase;
 }
 

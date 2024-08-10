@@ -5017,8 +5017,10 @@ body.true--mobile.orientation--portrait .player-video__paused {
 
 .player-panel__quality {
     width: auto !important;
-    padding: 3px 1em !important; /* Отступы по 2px сверху и снизу, по 0.1em по бокам */
-    border-radius: 1.5em !important; /* Увеличенный радиус скругления */
+    padding: 0.1em 0.5em !important;
+    -webkit-border-radius: 0.2em !important;
+    -moz-border-radius: 0.2em !important;
+    border-radius: 0.2em !important;
     text-transform: uppercase;
 }
 
