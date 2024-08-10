@@ -927,7 +927,7 @@ body.ambience--enable .head {
     }
 }
 
-.navigation-bar {
+/*.navigation-bar {
     position: fixed;
     left: 0;
     bottom: 0;
@@ -935,8 +935,7 @@ body.ambience--enable .head {
     padding: 0 1.5em 2em 1.5em;
     z-index: 11;
     display: none;
-}
-
+}*/
 .navigation-bar__body {
     border-radius: 1.4em;
     background: transparent; /* Установлен полностью прозрачный фон */

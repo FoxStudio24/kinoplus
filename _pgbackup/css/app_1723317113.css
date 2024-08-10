@@ -1432,14 +1432,13 @@ body.true--mobile.orientation--landscape .head .head__body {
     color: #000;
 }
 
-.activitys {
+/*.activitys {
     display: -webkit-box;
     display: -webkit-flex;
     display: -moz-box;
     display: -ms-flexbox;
     display: flex;
-}
-
+}*/
 .activitys__slides {
     position: relative;
     width: 100%;
