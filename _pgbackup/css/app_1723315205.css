@@ -1837,7 +1837,6 @@ backdrop-filter: blur(25px); /* Размытие фона */
     will-change: transform;
     margin-left: 20px; /* добавил отступ слева */
     margin-right: 20px; /* добавил отступ справа */
-    margin-bottom: 5px; /* добавил отступ снизу */
     border-radius: 1em; /* добавил закругление */
     background-color: rgba(35, 35, 35, 0.5); /* добавил полупрозрачный серый фон */
 }
@@ -5726,7 +5725,7 @@ body.true--mobile .player-info .head-backward__button {
     -moz-transition: transform 0.2s, -moz-transform 0.2s;
     transition: transform 0.2s;
     transition: transform 0.2s, -webkit-transform 0.2s, -moz-transform 0.2s, -o-transform 0.2s;
-    background: rgba(14, 14, 15, 0);
+    background: rgba(14, 14, 15, 0.15);
     width: 35%;
     display: -webkit-box;
     display: -webkit-flex;
@@ -12654,7 +12653,7 @@ body.glass--style .settings-input__content,
 body.glass--style .modal__content,
 body.glass--style .settings-input--free,
 body.glass--style .navigation-bar__body {
-    background-color: rgba(0, 0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.47);
     -webkit-backdrop-filter: blur(25px);
     backdrop-filter: blur(25px);
 }

@@ -1576,7 +1576,6 @@ body.true--mobile.orientation--landscape .head .head__body {
     -webkit-border-radius: 3em;
     -moz-border-radius: 3em;
     border-radius: 3em;
-    border: 1px solid rgba(34, 34, 34, 0); /* Black border with width of 2px */
 }
 
 .menu__item + li {
@@ -1803,7 +1802,7 @@ backdrop-filter: blur(25px); /* Размытие фона */
 
 .settings-folder {
     padding: 1.5em 2em; /* Внутренние отступы внутри элемента */
-    margin: 20px 20px 5px; /* Внешние отступы вокруг элемента с 5px между элементами */
+    margin: 20px; /* Внешние отступы вокруг элемента */
     display: flex; /* Современный синтаксис для flexbox */
     flex-direction: column; /* Вертикальное расположение дочерних элементов */
     justify-content: center; /* Вертикальное центрирование содержимого */
@@ -1811,7 +1810,7 @@ backdrop-filter: blur(25px); /* Размытие фона */
     text-align: center; /* Центрирование текста внутри элемента */
     will-change: transform; /* Оптимизация для изменения трансформации */
     border-radius: 15px; /* Закругление углов элемента */
-    background: rgba(35, 35, 35, 0.5); /* Опционально: фон для видимости закруглений */
+    background: rgba(0, 0, 0, 0.35); /* Опционально: фон для видимости закруглений */
     font-family: 'Unbounded', sans-serif; /* Применение шрифта Unbounded Light */
     font-size: 1em; /* Уменьшенный размер шрифта, измените по необходимости */
 }
@@ -1828,7 +1827,6 @@ backdrop-filter: blur(25px); /* Размытие фона */
 
 .settings-folder.focus {
     background: linear-gradient(135deg, #ff4b1f, #ff9068); /* Градиент */
-    box-shadow: 0 5px 30px rgba(255, 75, 31, 0.75);
 }
 
 .settings-param {
@@ -1837,9 +1835,7 @@ backdrop-filter: blur(25px); /* Размытие фона */
     will-change: transform;
     margin-left: 20px; /* добавил отступ слева */
     margin-right: 20px; /* добавил отступ справа */
-    margin-bottom: 5px; /* добавил отступ снизу */
     border-radius: 1em; /* добавил закругление */
-    background-color: rgba(35, 35, 35, 0.5); /* добавил полупрозрачный серый фон */
 }
 
 .settings-param__name {
@@ -1891,7 +1887,6 @@ backdrop-filter: blur(25px); /* Размытие фона */
 
 .settings-param.focus {
     background: linear-gradient(45deg, #ff4b1f, #ff9068);
-    box-shadow: 0 5px 30px rgba(255, 75, 31, 0.75);
 }
 
 .settings-param--button .settings-param__name {
@@ -3853,7 +3848,6 @@ body.card--no-cover .full-start__background {
 .full-descr__tag.focus {
     background-color: #d8c39a;
     color: #000;
-    box-shadow: 0 0 70px 2px rgba(216, 195, 154, 0.69);
 }
 
 .full-persons {
@@ -3942,7 +3936,6 @@ body.card--no-cover .full-start__background {
 .full-person.focus {
     background-color: #d4c097;
     color: #000;
-    box-shadow: 0 0 70px 2px rgba(216, 195, 154, 0.69);
 }
 
 .full-person--loaded .full-person__photo > img {
@@ -5726,7 +5719,7 @@ body.true--mobile .player-info .head-backward__button {
     -moz-transition: transform 0.2s, -moz-transform 0.2s;
     transition: transform 0.2s;
     transition: transform 0.2s, -webkit-transform 0.2s, -moz-transform 0.2s, -o-transform 0.2s;
-    background: rgba(14, 14, 15, 0);
+    background: rgba(14, 14, 15, 0.15);
     width: 35%;
     display: -webkit-box;
     display: -webkit-flex;
@@ -5805,11 +5798,10 @@ body.selectbox--open .selectbox__content {
 
 .selectbox-item {
     padding: 1.5em 2em;
-    margin: 0 1em 5px; /* Отступы по бокам и снизу */
+    margin: 0 1em; /* Отступы по бокам (лево и право) */
     position: relative;
     will-change: transform;
     border-radius: 8px; /* Закругление углов */
-    background-color: rgba(35, 35, 35, 0.5); /* Полупрозрачный серый фон */
 }
 
 .selectbox-item__title {
@@ -5910,8 +5902,7 @@ body.selectbox--open .selectbox__content {
 }
 
 .selectbox-item.focus {
-    background: linear-gradient(135deg, rgba(255, 75, 31, 0.75), rgba(255, 75, 31, 0.75));
-    box-shadow: 0 5px 30px rgba(255, 75, 31, 0.75); /* Increase the blur radius for a stronger blur effect */
+    background: linear-gradient(135deg, #ff4b1f, #ff9068);
 }
 
 .youtube-player {
@@ -6542,7 +6533,6 @@ body.platform--netcast .category-full:after {
     margin-top: 3.3em;
     font-size: 1.3em;
     color: rgba(255, 255, 255, 0.6);
-    font-family: 'Unbounded', sans-serif; /* Apply the Unbounded font */
 }
 
 .search-source {
@@ -6558,7 +6548,7 @@ body.platform--netcast .category-full:after {
     -ms-flex-align: center;
     align-items: center;
     padding: 0.2em 0.8em;
-    background: rgba(216, 195, 154, 0.17);
+    background: rgba(221, 221, 221, 0.06);
     -webkit-border-radius: 0.3em;
     -moz-border-radius: 0.3em;
     border-radius: 0.3em;
@@ -6570,7 +6560,7 @@ body.platform--netcast .category-full:after {
 }
 
 .search-source__count {
-    background-color: rgba(216, 195, 154, 0.19);
+    background-color: rgba(0, 0, 0, 0.6);
     margin-left: 0.5em;
     -webkit-border-radius: 5em;
     -moz-border-radius: 5em;
@@ -6580,7 +6570,7 @@ body.platform--netcast .category-full:after {
     min-width: 1.3em;
     text-align: center;
     font-weight: 700;
-    color: #aca486;
+    color: #fff;
 }
 
 .search-source--loading .search-source__count {
@@ -6595,17 +6585,17 @@ body.platform--netcast .category-full:after {
 
 .search-source.active {
     opacity: 1;
-    background-color: #d7c39a;
+    background-color: #fff;
     color: #000;
 }
 
 .search-source.focus {
-    background: rgba(213, 192, 152, 0.23);
+    background: rgba(221, 221, 221, 0.3);
     opacity: 1;
-    -webkit-box-shadow: inset 0 0 0 0.15em #d1be97;
-    -moz-box-shadow: inset 0 0 0 0.15em #d8c39a;
-    box-shadow: inset 0 0 0 0.15em #d8c39a;
-    color: #d8c39a;
+    -webkit-box-shadow: inset 0 0 0 0.15em #fff;
+    -moz-box-shadow: inset 0 0 0 0.15em #fff;
+    box-shadow: inset 0 0 0 0.15em #fff;
+    color: #fff;
 }
 
 .search-source + .search-source {
@@ -6704,15 +6694,15 @@ body.true--mobile .search .search-source:not(.active) {
     height: auto;
     width: auto;
     line-height: 1.2;
-    background: rgba(216, 195, 154, 0.15);
-    color: #ffffff;
+    background: rgba(221, 221, 221, 0.06);
+    color: #fff;
 }
 
 .simple-keyboard .hg-button.hg-activeButton,
 .simple-keyboard .hg-button.focus,
 .simple-keyboard .hg-button:hover {
     background: rgba(221, 221, 221, 0.3);
-    color: #ffffff;
+    color: #fff;
 }
 
 @media screen and (max-width: 580px) {
@@ -6791,7 +6781,7 @@ body.true--mobile .search .search-source:not(.active) {
 }
 
 .simple-keyboard .hg-button[data-skbtn="{MIC}"] {
-    color: #ffffff;
+    color: #fff;
 }
 
 .simple-keyboard .hg-button[data-skbtn="{MIC}"] svg {
@@ -12654,7 +12644,7 @@ body.glass--style .settings-input__content,
 body.glass--style .modal__content,
 body.glass--style .settings-input--free,
 body.glass--style .navigation-bar__body {
-    background-color: rgba(0, 0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.47);
     -webkit-backdrop-filter: blur(25px);
     backdrop-filter: blur(25px);
 }
@@ -12663,7 +12653,6 @@ body.glass--style .selectbox-item.focus,
 body.glass--style .settings-folder.focus,
 body.glass--style .settings-param.focus {
     background: linear-gradient(45deg, #ff4b1f, #ff9068);
-    box-shadow: 0 5px 30px rgba(255, 75, 31, 0.75);
     color: #000000; /* Цвет текста */
     position: relative;
     z-index: 0; /* Убедитесь, что элемент выше по оси Z, чем псевдоэлементы */
