@@ -34,19 +34,6 @@
 
 ![urlbardifference](Темы.png)
 
-You can show and hide the URL Bar (See the difference above) by commenting / uncomment the following section of code:
+Изменение темы можно в настройках -Интефейс/Выбрать тему
 
-```css
-/*─────────────────────────────*/
-/* Comment this section if you */
-/* want to show the URL Bar    */
-/*─────────────────────────────*/
-
-.urlbarView {
-  display: none !important;
-}
-
-/*─────────────────────────────*/
-
-```
 
