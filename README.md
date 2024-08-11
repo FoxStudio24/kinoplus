@@ -15,12 +15,16 @@
 ## ⚙️ Устоновка
 
 ⏺ На тв (webos/tizen)
+
 1. Устоновить приложение media station x
+
 2.Добавте любой плейлист , нажмите на (+) добавть web приложение вписать (https://kinoplus.vercel.app)
 
 
 ⏺ На тв,телефон (GOGLE TV/ANDROID TV/Телефон)
+
 1. Устоновить приложение lampa
+
 2.Изменить адрес lampa  вписать (https://kinoplus.vercel.app)
 
 
