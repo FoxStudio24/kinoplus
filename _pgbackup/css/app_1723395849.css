@@ -4540,9 +4540,9 @@ video::-webkit-media-controls-panel-container {
     display: flex;
     opacity: 1;
     font-family: 'Unbounded', sans-serif;
-    border-radius: 0.25em; /* Закругление углов */
+    border-radius: 0.5em; /* Закругление углов */
     backdrop-filter: blur(10px); /* Эффект размытия */
-    background-color: rgba(0, 0, 0, 0.2); /* Полупрозрачный фон */
+    background-color: rgba(255, 255, 255, 0.2); /* Полупрозрачный фон */
     margin: 2px 0; /* Отступы: сверху и снизу по 2 пикселя, справа и слева - 0 */
 }
 
@@ -5606,7 +5606,7 @@ body.true--mobile.orientation--portrait .player-panel__quality {
 }
 
 .player-info__values .value--size span {
-    background: rgba(0, 0, 0, 0);
+    background: rgba(216, 195, 154, 0.3);
     padding: 0.1em 0.5em;
     -webkit-border-radius: 0.3em;
     -moz-border-radius: 0.3em;
@@ -5628,7 +5628,7 @@ body.true--mobile.orientation--portrait .player-panel__quality {
     -webkit-border-radius: 100%;
     -moz-border-radius: 100%;
     border-radius: 100%;
-    background-color: rgba(0, 0, 0, 0);
+    background-color: rgba(255, 255, 255, 0);
     display: block;
 }
 
@@ -5660,12 +5660,12 @@ body.true--mobile.orientation--portrait .player-panel__quality {
 }
 
 .player-info {
-    background-color: rgba(0, 0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.6);
 }
 
 body.platform--browser .player-info,
 body.platform--nw .player-info {
-    background-color: rgba(0, 0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.3);
     -webkit-backdrop-filter: blur(1em);
     backdrop-filter: blur(1em);
 }

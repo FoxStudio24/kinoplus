@@ -1267,7 +1267,7 @@ body.light--version .wrap__left {
     display: -ms-flexbox;
     display: flex;
     white-space: nowrap;
-    margin-top: -0.5em;
+    margin-top: -0.2em;
 }
 
 .head__time-now {
@@ -4539,11 +4539,6 @@ video::-webkit-media-controls-panel-container {
     display: -ms-flexbox;
     display: flex;
     opacity: 1;
-    font-family: 'Unbounded', sans-serif;
-    border-radius: 0.25em; /* Закругление углов */
-    backdrop-filter: blur(10px); /* Эффект размытия */
-    background-color: rgba(0, 0, 0, 0.2); /* Полупрозрачный фон */
-    margin: 2px 0; /* Отступы: сверху и снизу по 2 пикселя, справа и слева - 0 */
 }
 
 .player-video__backwork-icon {
@@ -5606,7 +5601,7 @@ body.true--mobile.orientation--portrait .player-panel__quality {
 }
 
 .player-info__values .value--size span {
-    background: rgba(0, 0, 0, 0);
+    background: rgba(216, 195, 154, 0.3);
     padding: 0.1em 0.5em;
     -webkit-border-radius: 0.3em;
     -moz-border-radius: 0.3em;
@@ -5628,7 +5623,7 @@ body.true--mobile.orientation--portrait .player-panel__quality {
     -webkit-border-radius: 100%;
     -moz-border-radius: 100%;
     border-radius: 100%;
-    background-color: rgba(0, 0, 0, 0);
+    background-color: rgba(255, 255, 255, 0);
     display: block;
 }
 
@@ -5660,12 +5655,12 @@ body.true--mobile.orientation--portrait .player-panel__quality {
 }
 
 .player-info {
-    background-color: rgba(0, 0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.6);
 }
 
 body.platform--browser .player-info,
 body.platform--nw .player-info {
-    background-color: rgba(0, 0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.3);
     -webkit-backdrop-filter: blur(1em);
     backdrop-filter: blur(1em);
 }
@@ -5862,12 +5857,8 @@ body.selectbox--open .selectbox__content {
 }
 
 .selectbox-item__icon > *.size-youtube {
-    width: 10em;
-    height: 7em;
-    border-radius: 0.5em; /* Закругление углов */
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    width: 6.9em;
+    height: 3.9em;
 }
 
 .selectbox-item__lock {
