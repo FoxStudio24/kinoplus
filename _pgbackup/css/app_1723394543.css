@@ -2942,7 +2942,7 @@ body.settings--open .settings__content {
 .full-start__status {
     font-family: 'Unbounded', sans-serif; /* Добавлен шрифт Unbounded */
     font-size: 1.2em;
-    border: 0.5px solid rgba(255, 255, 255, 0.05);
+    border: 0.5px solid rgba(255, 255, 255, 0.23);
     border-radius: 0.2em;
     padding: 0.3em;
     background: rgba(0, 0, 0, 0.5); /* Черный прозрачный фон */
@@ -6956,7 +6956,8 @@ body.true--mobile .simple-keyboard--with-mic .simple-keyboard-buttons {
 }
 
 .modal__content {
-    background-color: #262829;
+    background-color: rgba(14, 14, 15, 0.25);
+    backdrop-filter: blur(25px);
     padding: 1.5em;
     -webkit-border-radius: 1em;
     -moz-border-radius: 1em;
@@ -6964,6 +6965,7 @@ body.true--mobile .simple-keyboard--with-mic .simple-keyboard-buttons {
     margin: 0 auto;
     max-width: 37%;
     position: relative;
+    font-family: 'Unbounded', sans-serif;
 }
 
 @media screen and (max-width: 767px) {

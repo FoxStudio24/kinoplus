@@ -223,6 +223,7 @@ body {
     position: relative;
     font-family: "SegoeUI", sans-serif;
     background-image: linear-gradient(90deg, #000000,#000000);
+    backdrop-filter: blur(25px);
     padding: 0;
     margin: 0;
     overflow: hidden;

@@ -2942,7 +2942,7 @@ body.settings--open .settings__content {
 .full-start__status {
     font-family: 'Unbounded', sans-serif; /* Добавлен шрифт Unbounded */
     font-size: 1.2em;
-    border: 0.5px solid rgba(255, 255, 255, 0.05);
+    border: 0.25px solid rgba(255, 255, 255, 0.05);
     border-radius: 0.2em;
     padding: 0.3em;
     background: rgba(0, 0, 0, 0.5); /* Черный прозрачный фон */

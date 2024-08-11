@@ -2942,7 +2942,7 @@ body.settings--open .settings__content {
 .full-start__status {
     font-family: 'Unbounded', sans-serif; /* Добавлен шрифт Unbounded */
     font-size: 1.2em;
-    border: 0.5px solid rgba(255, 255, 255, 0.05);
+    border: 1px solid #757575;
     border-radius: 0.2em;
     padding: 0.3em;
     background: rgba(0, 0, 0, 0.5); /* Черный прозрачный фон */
@@ -3267,7 +3267,7 @@ body.settings--open .settings__content {
     font-family: 'Unbounded', sans-serif; /* Применение шрифта Unbounded */
     text-align: center; /* Центрирование текста внутри элементов */
     border: 1px solid rgba(0, 0, 0, 0); /* Black border with width of 2px */
-    border: 0.1px solid rgba(255, 255, 255, 0.05);
+    border-radius: 2em; /* Ensure this matches the button's border radius */
 }
 
 .full-start__button > svg {
@@ -3286,7 +3286,7 @@ body.settings--open .settings__content {
 .full-start__button.focus {
     background-color: #d8c39a;
     color: #000;
-    border: 0.1px solid #000; /* Black border with width of 2px */
+    border: 1px solid #000; /* Black border with width of 2px */
     border-radius: 2em; /* Ensure this matches the button's border radius */
 }
 
@@ -3327,7 +3327,6 @@ body.settings--open .settings__content {
     margin-right: 1em; /* Отступ справа */
     font-family: 'Unbounded', sans-serif; /* Применение шрифта Unbounded Black */
     font-weight: 900; /* Вес шрифта Black 900 */
-    border: 0.1px solid rgba(255, 255, 255, 0.05);
 }
 
 .full-start__rate > div:first-child {
