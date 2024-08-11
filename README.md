@@ -30,21 +30,7 @@
 
 
 
-### 💛 Colors
-
-In this section of the code you can change the colors, there's a window color and a tabs / urlbar color. 
-
-```css
-
-:root {
-  --sfwindow: #19171a;
-  --sfsecondary: #201e21;
-}
-
-
-```
-
-### 🚧 URL Bar
+### 🖤💛 Темы
 
 ![urlbardifference](assets/urlbar.png)
 
@@ -64,26 +50,3 @@ You can show and hide the URL Bar (See the difference above) by commenting / unc
 
 ```
 
-### 🔧 Recommended settings
-
-- Right click on toolbar -> Customize.
-  - Remove (as you want) all the removable elements including extensions, drag space and buttons.
-- Install the [SimpleFox](https://addons.mozilla.org/en-US/firefox/addon/simplerentfox/) add on theme.
-
-
-### 🍱 Startpage
-
-If anyone has the doubt, in almost all of the screenshots you can see a Startpage made for it. It's called [Bento 🍱](https://github.com/MiguelRAvila/Bento) and It's another project I made. It fits with the Firefox theme because It's done with the same principles: Minimalist, Simple and Elegant.
-
-![bento](https://github.com/migueravila/Bento/blob/master/assets/img/subheader.png)
-
-###  ⛲ One line version: Cascade
-
-[Andreas Grafen](https://github.com/andreasgrafen/) has made an awesome work making a One Line theme inspired by SimpleFox. As it's work is awesome and allows you customization I can totally recomend it. Here you can find his repo: [Link](https://github.com/andreasgrafen/cascade)
-
-![image](assets/oneline.png)
-## ⚠️ Notes
-
-- As Firefox changed at version 88 introducing the Proton UI, all the old files and configurations moved to [oldFirefox](https://github.com/migueravila/SimpleFox/tree/oldFirefox) branch.
-- Windows and MacOS are currently tested but may not be in the future.
-- Some custom themes (And GTK themes in Linux) may break context menus.
