@@ -1,4 +1,4 @@
-![image](assets/head.png)
+![image](HD.png)
 
 <p style="margin: -20px 0 30px">
   <a href="https://www.buymeacoffee.com/migueravila" target="_blank" style='margin-right:0px; margin-top:5px'>
