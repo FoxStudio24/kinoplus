@@ -32,7 +32,7 @@
 
 ### 🖤💛 Темы
 
-![urlbardifference](assets/urlbar.png)
+![urlbardifference](Темы.png)
 
 You can show and hide the URL Bar (See the difference above) by commenting / uncomment the following section of code:
 
