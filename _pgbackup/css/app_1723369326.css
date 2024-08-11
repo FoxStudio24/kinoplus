@@ -4737,10 +4737,10 @@ body.true--mobile.orientation--portrait .player-video__paused {
     transition: transform 0.3s, opacity 0.3s;
     transition: transform 0.3s, opacity 0.3s, -webkit-transform 0.3s, -moz-transform 0.3s, -o-transform 0.3s;
     width: auto;
-    -webkit-border-radius: 1.5em; /* Increased border-radius for more rounded corners */
-    -moz-border-radius: 1.5em;
-    border-radius: 1.5em;
-    font-family: 'Unbounded', sans-serif; /* Apply the Unbounded font */
+    -webkit-border-radius: 0.5em;
+    -moz-border-radius: 0.5em;
+    border-radius: 0.5em;
+    font-family: 'Unbounded', sans-serif; /* Применение шрифта Unbounded */
 }
 
 @media screen and (max-width: 480px) {
@@ -5052,8 +5052,7 @@ body.true--mobile.orientation--portrait .player-video__paused {
 }
 
 .player-panel__settings {
-    padding: 0.35em; /* Maintain padding on all sides */
-    margin: 0 0px; /* Add 2px margin on the left and right */
+    padding: 0.35em !important;
 }
 
 .player-panel__next-episode-name {
@@ -5504,7 +5503,7 @@ body.true--mobile.orientation--portrait .player-panel__quality {
     top: 1.5em;
     left: 1.5em;
     right: 1.5em;
-    background-color: rgba(0, 0, 0, 0); /* Fully transparent background */
+    background-color: rgba(0, 0, 0, 0);
     backdrop-filter: blur(10px); /* Adjust the blur radius as needed */
     -webkit-transform: translateY(-130%);
     -moz-transform: translateY(-130%);
@@ -5517,11 +5516,10 @@ body.true--mobile.orientation--portrait .player-panel__quality {
     -moz-transition: transform 0.3s, opacity 0.3s, -moz-transform 0.3s;
     transition: transform 0.3s, opacity 0.3s;
     transition: transform 0.3s, opacity 0.3s, -webkit-transform 0.3s, -moz-transform 0.3s, -o-transform 0.3s;
-    -webkit-border-radius: 1.5em; /* Increased border-radius for more rounded corners */
-    -moz-border-radius: 1.5em;
-    border-radius: 1.5em;
+    -webkit-border-radius: 0.5em;
+    -moz-border-radius: 0.5em;
+    border-radius: 0.5em;
     font-family: 'Unbounded', sans-serif; /* Apply the Unbounded font */
-    opacity: 1; /* Ensure the element itself remains fully visible */
 }
 
 @media screen and (max-width: 480px) {
@@ -5620,7 +5618,7 @@ body.true--mobile.orientation--portrait .player-panel__quality {
     -webkit-border-radius: 100%;
     -moz-border-radius: 100%;
     border-radius: 100%;
-    background-color: rgba(255, 255, 255, 0);
+    background-color: rgba(255, 255, 255, 0.1);
     display: block;
 }
 
@@ -9577,7 +9575,7 @@ body.platform--netcast .torrent-item__ffprobe > div::before {
 }
 
 .explorer__files .torrent-filter .simple-button:not(.focus) {
-    background-color: rgba(217, 196, 155, 0.44);
+    background-color: rgba(0, 0, 0, 0.07);
 }
 
 .explorer__search {
@@ -10227,9 +10225,8 @@ body.platform--netcast .torrent-item__ffprobe > div::before {
 }
 
 .simple-button.focus {
-    background: linear-gradient(135deg, rgba(255, 75, 31, 0.75), rgba(255, 75, 31, 0.75));
-    box-shadow: 0 5px 30px rgba(255, 75, 31, 0.75); /* Increase the blur radius for a stronger blur effect */
-    color: #000000;
+    background-color: #fff;
+    color: #000;
 }
 
 .simple-button--filter > div {
