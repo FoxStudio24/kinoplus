@@ -24,7 +24,7 @@
     left: 0;
     right: 0;
     bottom: 0;
-    background-image: url('img/langwall.jpg');
+    background-image: url('img/welcome.jpg');
     background-size: cover;
     background-position: center;
     z-index: 200;
@@ -44,12 +44,14 @@
     -moz-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;
+    position: relative; /* Make sure the overlay is positioned relative to this container */
 }
 
 .lang__body {
     text-align: center;
     font-family: 'Unbounded', sans-serif;
-    background-color: rgba(12, 12, 12, 0); /* Черный прозрачный фон */ /* Эффект блюра фона */
+    background-color: #0c0c0c; /* Черный прозрачный фон */
+    backdrop-filter: blur(30px); /* Эффект блюра фона */
     border-radius: 30px; /* Закругленные углы */
     padding: 20px; /* Добавлено для лучшего вида */
     box-sizing: border-box; /* Учитывает padding и border в размере элемента */

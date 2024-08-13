@@ -24,7 +24,7 @@
     left: 0;
     right: 0;
     bottom: 0;
-    background-image: url('img/langwall.jpg');
+    background-image: url('img/welcome.jpg');
     background-size: cover;
     background-position: center;
     z-index: 200;
@@ -49,7 +49,8 @@
 .lang__body {
     text-align: center;
     font-family: 'Unbounded', sans-serif;
-    background-color: rgba(12, 12, 12, 0); /* Черный прозрачный фон */ /* Эффект блюра фона */
+    background-color: #0c0c0c; /* Черный прозрачный фон */
+    backdrop-filter: blur(30px); /* Эффект блюра фона */
     border-radius: 30px; /* Закругленные углы */
     padding: 20px; /* Добавлено для лучшего вида */
     box-sizing: border-box; /* Учитывает padding и border в размере элемента */
@@ -10438,8 +10439,8 @@ body.system--keyboard .search-box .simple-keyboard-input {
     right: 25px; /* Отступ справа */
     bottom: 10px; /* Отступ снизу */
     z-index: 99;
-    background: rgba(69, 69, 69, 0.36); /* Добавлено прозрачность для фона */
-    color: #d4c098;
+    background: rgba(101, 234, 167, 0.8); /* Добавлено прозрачность для фона */
+    color: #000;
     border-radius: 10px; /* Закругленные углы */
     backdrop-filter: blur(25px); /* Эффект блюра фона */
     font-family: 'Unbounded', sans-serif; /* Шрифт Unbounded */
@@ -10478,17 +10479,12 @@ body.system--keyboard .search-box .simple-keyboard-input {
 }
 
 .helper {
-    background: rgba(99, 99, 99, 0.5); /* Цвет фона с прозрачностью */
+    background: #4b8dcb;
     position: absolute;
-    bottom: 10px; /* Отступ снизу */
-    left: 25px; /* Отступ слева */
-    right: 25px; /* Отступ справа */
+    bottom: 0;
+    left: 0;
+    right: 0;
     z-index: 98;
-    border-radius: 10px; /* Закругленные углы */
-    backdrop-filter: blur(25px); /* Эффект блюра фона */
-    font-family: 'Unbounded', sans-serif; /* Шрифт Unbounded */
-    padding: 10px; /* Внутренние отступы */
-    box-sizing: border-box; /* Учитывает padding и border в размере элемента */
     -webkit-transform: translateY(100%);
     -moz-transform: translateY(100%);
     -ms-transform: translateY(100%);
@@ -10503,7 +10499,7 @@ body.system--keyboard .search-box .simple-keyboard-input {
     opacity: 0;
     pointer-events: none;
     text-align: center;
-    color: #d8c39a; /* Цвет текста */
+    color: #fff;
 }
 
 .helper__ico {
@@ -10587,7 +10583,7 @@ body.system--keyboard .search-box .simple-keyboard-input {
     right: 0;
     left: 0;
     bottom: 0;
-    background-color: #d8c39a;
+    background-color: #fff;
     -webkit-border-radius: 0.3em;
     -moz-border-radius: 0.3em;
     border-radius: 0.3em;
@@ -10933,7 +10929,7 @@ body.system--keyboard .search-box .simple-keyboard-input {
     -webkit-border-radius: 0.3em;
     -moz-border-radius: 0.3em;
     border-radius: 0.3em;
-    background-color: #000000;
+    background-color: #323232;
     white-space: nowrap;
 }
 
@@ -10942,7 +10938,7 @@ body.system--keyboard .search-box .simple-keyboard-input {
 }
 
 .plugins-catalog__line.focus {
-    background-color: #ffffff;
+    background-color: #fff;
     color: #323232;
 }
 
@@ -11231,7 +11227,7 @@ body.system--keyboard .search-box .simple-keyboard-input {
     -ms-flex-direction: column;
     flex-direction: column;
     z-index: 20;
-    background-color: #0E0E0F;
+    background-color: #232425;
 }
 
 .extensions__head {
@@ -11300,7 +11296,7 @@ body.system--keyboard .search-box .simple-keyboard-input {
     left: -0.5em;
     right: -0.5em;
     bottom: -0.5em;
-    border: 0.3em solid #ffffff;
+    border: 0.3em solid #fff;
     -webkit-border-radius: 1.4em;
     -moz-border-radius: 1.4em;
     border-radius: 1.4em;
@@ -11312,7 +11308,7 @@ body.system--keyboard .search-box .simple-keyboard-input {
     -webkit-border-radius: 1em;
     -moz-border-radius: 1em;
     border-radius: 1em;
-    background-color: #1c1c1c;
+    background-color: #404040;
     margin-right: 1em;
 }
 
@@ -11321,7 +11317,7 @@ body.system--keyboard .search-box .simple-keyboard-input {
 }
 
 .extensions__item {
-    background-color: #1c1c1c;
+    background-color: #404040;
     -webkit-border-radius: 1em;
     -moz-border-radius: 1em;
     border-radius: 1em;
@@ -11470,7 +11466,7 @@ body.system--keyboard .search-box .simple-keyboard-input {
     display: inline-block;
     width: 0.2em;
     height: 0.4em;
-    border-right: 0.15em solid #ffffff;
+    border-right: 0.15em solid #fff;
     border-bottom: 0.15em solid #fff;
     -webkit-transform: rotate(45deg);
     -moz-transform: rotate(45deg);
@@ -11481,15 +11477,13 @@ body.system--keyboard .search-box .simple-keyboard-input {
 
 .extensions__item-premium {
     margin-left: 1em;
-    background-color: rgba(216, 195, 154, 0.68); /* Цвет фона с прозрачностью */
+    background-color: #D8C39A;
     color: #000;
-    padding: 0.25em 0.25em; /* Увеличение внутреннего отступа */
-    border-radius: 0.5em; /* Увеличение закругления углов */
-    font-size: 1em; /* Увеличение размера шрифта */
-    backdrop-filter: blur(5px); /* Эффект блюра фона */
-    -webkit-border-radius: 0.5em; /* Увеличение закругления углов для старых браузеров */
-    -moz-border-radius: 0.5em; /* Увеличение закругления углов для старых браузеров */
-    border-radius: 0.5em; /* Увеличение закругления углов для современных браузеров */
+    padding: 0.1em 0.5em;
+    -webkit-border-radius: 0.3em;
+    -moz-border-radius: 0.3em;
+    border-radius: 0.3em;
+    font-size: 0.8em;
 }
 
 .extensions__item-body {
@@ -11637,7 +11631,7 @@ body.system--keyboard .search-box .simple-keyboard-input {
     border-radius: 100%;
     width: 2em;
     height: 2em;
-    background-color: #ffffff;
+    background-color: #fff;
     display: block;
     z-index: 1;
     color: #000;
@@ -11655,8 +11649,6 @@ body.system--keyboard .search-box .simple-keyboard-input {
     border-radius: 0.3em;
     padding: 0.3em 0.4em 0.4em;
     font-size: 0.78em;
-    backdrop-filter: blur(10px); /* Add blur effect */
-    box-shadow: 0 0 2px rgba(0, 0, 0, 0.5); /* Optional shadow for better visibility */
 }
 
 .extensions-info {

@@ -24,7 +24,7 @@
     left: 0;
     right: 0;
     bottom: 0;
-    background-image: url('img/langwall.jpg');
+    background-image: url('img/welcome.jpg');
     background-size: cover;
     background-position: center;
     z-index: 200;
@@ -49,7 +49,8 @@
 .lang__body {
     text-align: center;
     font-family: 'Unbounded', sans-serif;
-    background-color: rgba(12, 12, 12, 0); /* Черный прозрачный фон */ /* Эффект блюра фона */
+    background-color: #0c0c0c; /* Черный прозрачный фон */
+    backdrop-filter: blur(30px); /* Эффект блюра фона */
     border-radius: 30px; /* Закругленные углы */
     padding: 20px; /* Добавлено для лучшего вида */
     box-sizing: border-box; /* Учитывает padding и border в размере элемента */
@@ -11481,15 +11482,13 @@ body.system--keyboard .search-box .simple-keyboard-input {
 
 .extensions__item-premium {
     margin-left: 1em;
-    background-color: rgba(216, 195, 154, 0.68); /* Цвет фона с прозрачностью */
+    background-color: #D8C39A;
     color: #000;
-    padding: 0.25em 0.25em; /* Увеличение внутреннего отступа */
-    border-radius: 0.5em; /* Увеличение закругления углов */
-    font-size: 1em; /* Увеличение размера шрифта */
-    backdrop-filter: blur(5px); /* Эффект блюра фона */
-    -webkit-border-radius: 0.5em; /* Увеличение закругления углов для старых браузеров */
-    -moz-border-radius: 0.5em; /* Увеличение закругления углов для старых браузеров */
-    border-radius: 0.5em; /* Увеличение закругления углов для современных браузеров */
+    padding: 0.1em 0.5em;
+    -webkit-border-radius: 0.3em;
+    -moz-border-radius: 0.3em;
+    border-radius: 0.3em;
+    font-size: 0.8em;
 }
 
 .extensions__item-body {
