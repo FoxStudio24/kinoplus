@@ -3959,9 +3959,9 @@ body.card--no-cover .full-start__background {
 }
 
 .full-person.focus {
-    background: linear-gradient(135deg, #ff4b1f, #ff9068);
+    background-color: #d4c097;
     color: #000;
-    box-shadow: 0 0 70px 2px rgba(255, 75, 31, 0.75);
+    box-shadow: 0 0 70px 2px rgba(216, 195, 154, 0.69);
 }
 
 .full-person--loaded .full-person__photo > img {
