@@ -942,15 +942,18 @@ body.ambience--enable .head {
     left: 0;
     bottom: 0;
     right: 0;
+    padding: 0 1.5em 2em 1.5em;
     z-index: 11;
-    display: none; /* Полностью скрывает элемент */
+    display: none;
 }
 
 .navigation-bar__body {
     border-radius: 1.4em;
-    background: transparent; /* Фон полностью прозрачный */
+    background: transparent; /* Установлен полностью прозрачный фон */
     padding: 1.2em;
-    display: none; /* Полностью скрыть элемент */
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
 }
 
 .navigation-bar__item {
@@ -1136,12 +1139,12 @@ body.light--version .wrap__left {
 .head__body {
     font-family: 'Unbounded', sans-serif;
     padding: 0.5em 1.5em;
-    margin: 15px 50px; /* Отступы по бокам и сверху */
+    margin: 10px 50px; /* Отступы по бокам и сверху */
     display: flex;
     align-items: center;
-    background-color: rgba(41, 41, 41, 0.35); /* Полупрозрачный фон для эффекта блюра */
+    background-color: rgba(0, 0, 0, 0.35); /* Полупрозрачный фон для эффекта блюра */
     color: white;
-    border-radius: 25px;
+    border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(8px); /* Эффект блюра */
     transition: background-color 0.3s ease, box-shadow 0.3s ease;
@@ -1267,7 +1270,13 @@ body.light--version .wrap__left {
 }
 
 .head__time {
-    display: none;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    white-space: nowrap;
+    margin-top: -0.5em;
 }
 
 .head__time-now {
