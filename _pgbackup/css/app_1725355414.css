@@ -1,5 +1,5 @@
 .full-person.focus {
-    transform: scale(1.10); /* Увеличивает весь блок на 5% */
+    transform: scale(1.05); /* Увеличивает весь блок на 5% */
 }
 
 .settings_input_links {
@@ -3883,19 +3883,20 @@ body.card--no-cover .full-start__background {
     flex-direction: column; /* Вертикально располагает элементы */
     justify-content: center; /* Центрирует элементы по вертикали */
     align-items: center; /* Центрирует элементы по горизонтали */
-    margin-right: 0em;
+    margin-right: 2em;
     border-radius: 1em;
     padding: 1.7em; /* Включает отступы со всех сторон */
     flex-shrink: 0;
     font-size: 1.em;
     background-color: rgba(175, 151, 122, 0); /* Прозрачный фон */
+    backdrop-filter: blur(8px); /* Добавляет размытие фона */
     border: 1px solid rgba(255, 255, 255, 0); /* Прозрачная граница */
     text-align: center; /* Центрирует текст внутри блока */
 }
 
 .full-person__photo {
-    width: 150px;
-    height: 150px;
+    width: 100px;
+    height: 100px;
     border-radius: 50%; /* Создает круг */
     background-color: rgba(216, 195, 154, 0);
     border: 0.5px solid rgba(0, 0, 0, 0.2); /* Белая граница с прозрачностью */
@@ -3934,7 +3935,7 @@ body.card--no-cover .full-start__background {
 }
 
 .full-person.focus .full-person__photo {
-    box-shadow: 0 0 100px 10px rgba(0, 0, 0, 0.75); /* Добавляет тень к картинке *
+    box-shadow: 0 0 70px 20px rgba(0, 0, 0, 0.75); /* Добавляет тень к картинке *
     
 }*/
 }
